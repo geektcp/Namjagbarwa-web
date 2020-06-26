@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <div style="position:absolute;z-index:1"><img src="../assets/laji.jpg" alt=""></div>
+    <div style="position:absolute;z-index:1"><img src="../assets/chess-board.jpg" alt=""></div>
     <div class="box">
       <div class="chessborder" v-for="item in chessBorders" :key="item.id" @click="moveTo(item.X,item.Y)">
         <div class="chessman" v-if="item.name" @click="selectItem(item.X,item.Y,item.name,item.color)" :style={color:item.color,borderColor:item.BDcolor}>{{item.name}}</div>
